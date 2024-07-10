@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- entête de la page -->
+        <meta charset="utf-8" />
+        <title> espace Personnel </title>
+        <link rel="stylesheet" href="styleEspacePerso.css"/>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="logo.PNG" class="logo">
+            <nav class ="navigation">
+                <a href="#" class="active">Mon Espace</a>
+                <a href="#">Mes documents</a>
+                <a id="logout" href="#">Se déconnecter</a>
+            </nav>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="tout">
+            <div class="gauche">
+                <br>
+                <h1> Mes Documents </h1>
+                <div class="fichiers">
+                    <br>
+                    <form method="post">
+                        <div class="circle"><input type="checkbox" name="delNom[]" value="EC-CE1-2014-ABZ1-D1-E1-V1">EC-CE1-2014-ABZ1-D1-E1-V1</div><div class="circle"><input type="checkbox" name="delNom[]" value="EC-CE1-2014-ABZ1-D1-E1-V2">EC-CE1-2014-ABZ1-D1-E1-V2</div>                        <button type="submit" name="del" class="btn"> Supprimer</button>
+                    </form>
+                </div>
+            </div>
+            <div class="droite">
+                <form method="post" enctype="multipart/form-data">
+                    <h1> Ajouter un document </h1>
+                    <br>
+                    <p>Document XML</p>
+                    <div>
+                        <input type="file" name="file" required>
+                    </div>
+                    <br>
+                    <p>Scan de la copie</p>
+                    <div>
+                        <input type="file" name="picture" required>
+                    </div>
+                    <br>
+                    <button type="submit" name="btn" class="btn"> Ajouter</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $("#logout").on("click", function(event) {
+                    event.preventDefault(); 
+                    window.location.href = "pageAuthenfication.html"; 
+                });
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
