@@ -1,0 +1,46 @@
+body {
+	background-image: url('Maquette_Ecalm.png');
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+* {
+    margin:3px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.principale {
+	width: 450px;
+    background: lightgrey;
+    color : #fff;
+	color:black;
+	border-radius: 30px;
+	padding: 30px 40px;
+}
+
+.principale h1 {
+    font-size: 36px;
+    text-align: center;
+	color: black;
+	justify-content: space-around;
+ }
+
+ .principale .div{
+	display:flex;
+ }
+
+ .principale .choix{
+	flex:1;
+
+ }
+
+
+
+
+
+
+

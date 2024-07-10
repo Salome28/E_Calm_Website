@@ -1,0 +1,59 @@
+body{
+    display: flex;
+}
+
+.results{
+    width : 350px;
+    height: 100vh;
+    background-color: #8b9be9;
+    border-radius: 30px;
+    font-size: 20px;
+    text-align:center;
+}
+
+.results h1 {
+    font-size: 28px;
+    text-align: center;
+	color: black;
+	justify-content: space-around;
+ }
+
+ .page {
+    width:1300px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+ }
+
+ .page h1{
+    font-size: 30px;
+    text-align: center;
+	color: black;
+	justify-content: space-around;
+    color:#8b9be9;
+    border-radius: 30px;
+ }
+
+ .image{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display:flex;
+ }
+
+ .zoom-img{
+    transition : transform 0.3s;
+ }
+
+ .zoom-img:hover{
+    transform:scale(1.5);
+ }
+
+ .bas {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+
