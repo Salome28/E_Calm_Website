@@ -35,23 +35,23 @@
 </div>
 
 <script>
-$(document).ready(function() {
-    $("#submitBtn").on("click", function() {
-        $.ajax({
-            url: "login.php",
-            method: "POST",
-            data: $("#loginForm").serialize(),
-            success: function(response) {
-                if(response === "success") {
-                    alert('identifiant et mot de passe sont corrects !');
-                    window.location.href = "EspacePerso.html";
-                } else {
-                    alert('identifiant et mot de passe sont incorrects !');
-                }
-            }
-        });
-    });
-});
+//$(document).ready(function() {
+    //$("#submitBtn").on("click", function() {
+        //$.ajax({
+            //url: "login.php",
+            //method: "POST",
+            //data: $("#loginForm").serialize(),
+            //success: function(response) {
+                //if(response === "success") {
+                    //alert('identifiant et mot de passe sont corrects !');
+                   // window.location.href = "EspacePerso.html";
+                //} else {
+                    //alert('identifiant et mot de passe sont incorrects !');
+                //}
+            //}
+        //});
+    //});
+//});
 </script>
 </body>
 </html>
