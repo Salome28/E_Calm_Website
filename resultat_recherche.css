@@ -35,14 +35,16 @@ body{
    border-radius: 30px;
  }
 
- .image{
-   align-items: center;
+ .image {
+   display: flex;
    justify-content: center;
+   align-items: center;
    text-align: center;
-   display:flex;
-   width: 10%;
+}
 
- }
+.image img {
+   width: 10%;
+}
 
  .zoom-img{
    transition : transform 0.3s;
